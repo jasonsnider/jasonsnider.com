@@ -72,7 +72,7 @@ echo '</ul></nav>';
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'jasondsnider'; // required: replace example with your forum shortname
         var disqus_identifier = '<?php echo $post['slug']; ?>';
-        var disqus_url = 'https://jasonsnider.com/<?php echo $_SERVER['QUERY_STRING'] ?>';
+        var disqus_url = 'https://jasonsnider.com/<?php echo $_SERVER['REQUEST_URI']; ?>';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
