@@ -15,7 +15,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    
+
     <style>
 
       body{
@@ -28,13 +28,13 @@
         color: #666;
         font-family: 'PT Sans Caption', 'Open Sans', sans-serif;
       }
-      
+
      header > nav{
         text-align: center;
         padding-bottom: 8px;
         margin-bottom: 8px;
       }
-      
+
      header > nav a{
         text-decoration: none;
         color: #666;
@@ -74,8 +74,10 @@
 
     <div class="container">
       <hr>
-      <footer class="text-center">
-        <?php echo 'Hi, it took Apache ' . round($View->BuildTime->end(microtime()), 5) . ' seconds to render this page.'; ?>
+      <footer class="text-center text-muted clearfix">
+        <small class="pull-left">Built by: Jason in Chicago</small>
+        <small><?php echo 'Hi, it took Apache ' . round($View->BuildTime->end(microtime()), 5) . ' seconds to render this page.'; ?></small>
+        <small class="pull-right">Powered By: Tinker MVC</small>
       </footer>
     </div>
   </body>
