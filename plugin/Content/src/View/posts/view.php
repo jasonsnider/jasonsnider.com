@@ -6,7 +6,7 @@ extract($this->vars);
 
 echo "<article>"
 . "<h1>{$post['title']}</h1>"
-. "<section>{$post['body']}</sdyection>"
+. "<section>{$post['body']}</section>"
 . "</article>";
 
 echo "<nav aria-label=\"more\"><ul class=\"pager\">";
