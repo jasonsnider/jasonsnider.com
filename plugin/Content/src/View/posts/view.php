@@ -9,10 +9,14 @@ echo "<article>"
 . "<section>{$post['body']}</sdyection>"
 . "</article>";
 
+echo "<nav aria-label=\"more\"><ul class=\"pager\">";
+
 if(!empty($prev['slug'])){
-    echo "<a href=\"/content/posts/view/{$prev['slug']}\">Prev</a>";
+    echo "<li class=\"previous\"><a href=\"/content/posts/view/{$prev['slug']}\"><i class=\"fa fa-caret-left\" aria-hidden=\"true\"></i> Prev</a></li>";
 }
 
 if(!empty($next['slug'])){
-    echo "<a href=\"/content/posts/view/{$next['slug']}\">Next</a>"; 
+    echo "<li class=\"next\"><a href=\"/content/posts/view/{$next['slug']}\">Next <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i></a></li>";
 }
+
+echo "</ul></nav>";
