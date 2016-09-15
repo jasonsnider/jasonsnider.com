@@ -48,6 +48,16 @@
         color: #666;
         font-family: 'PT Sans Caption', 'Open Sans', sans-serif;
       }
+
+      .answer {
+          font-family: monospace;
+          color: #444;
+          margin: 0 0 12px;
+          border: 1px solid #c0c0c0;
+          padding: 6px 4px;
+          border-radius: 4px;
+          word-break: break-all;
+      }
     </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
