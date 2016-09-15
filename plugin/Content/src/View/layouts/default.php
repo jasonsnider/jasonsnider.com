@@ -77,7 +77,7 @@
         <nav>
           <a href="/">Blog</a> |
           <a href="/tools">Tools</a> |
-          <a href="/">Contact</a>
+          <a href="/content/pages/contact">Contact</a>
         </nav>
       </header>
 
