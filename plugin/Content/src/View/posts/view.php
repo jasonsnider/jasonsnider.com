@@ -1,25 +1,25 @@
 <?php
 /**
- * view.php
+ * view.php.
  */
 extract($this->vars);
 
-echo "<article>"
-. "<h1>{$post['title']}</h1>"
-. "<section>{$post['body']}</section>"
-. "</article>";
+echo '<article>'
+."<h1>{$post['title']}</h1>"
+."<section>{$post['body']}</section>"
+.'</article>';
 
-echo "<nav aria-label=\"more\"><ul class=\"pager\">";
+echo '<nav aria-label="more"><ul class="pager">';
 
-if(!empty($prev['slug'])){
+if (!empty($prev['slug'])) {
     echo "<li class=\"previous\"><a href=\"/content/posts/view/{$prev['slug']}\"><i class=\"fa fa-caret-left\" aria-hidden=\"true\"></i> Prev</a></li>";
 }
 
-if(!empty($next['slug'])){
+if (!empty($next['slug'])) {
     echo "<li class=\"next\"><a href=\"/content/posts/view/{$next['slug']}\">Next <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i></a></li>";
 }
 
-echo "</ul></nav>";
+echo '</ul></nav>';
 
 ?>
 <hr>
@@ -38,4 +38,29 @@ echo "</ul></nav>";
             Linux aficionado, open source advocate, sys admin, DBA, business analyst, project manager and scrum master.
         </div>
     </div>
+</aside>
+<hr>
+<aside class="ad">
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Leaderboard -->
+    <!--
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-2297949586762275"
+         data-ad-slot="3778634944"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script> -->
+
+    <!-- Responsive -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2297949586762275"
+         data-ad-slot="2167680542"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
 </aside>
