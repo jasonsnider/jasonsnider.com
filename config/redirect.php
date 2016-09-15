@@ -7,9 +7,9 @@
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
 if($uri[1] === 'post'){
-    header("LOCATION:/content/posts/view/{$uri[2]}");
+    header("LOCATION:/content/posts/view/{$uri[2]}", 301);
 }
 
 if($uri[1] === 'jsc'){
-    header("LOCATION:/tools/tools/{$uri[3]}");
+    header("LOCATION:/tools/tools/{$uri[3]}", 301);
 }
