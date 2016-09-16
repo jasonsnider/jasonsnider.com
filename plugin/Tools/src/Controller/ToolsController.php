@@ -20,7 +20,7 @@ class ToolsController extends \App\Controller\AppController
      * Accepts a user supplied string and passes it though every hash known to
      * PHP's hash_algos().
      */
-    public function php_hashes()
+    public function phpHashes()
     {
         $string = false;
         $userInput = filter_input_array(INPUT_POST);
@@ -36,7 +36,7 @@ class ToolsController extends \App\Controller\AppController
     /**
      * Displays random strings that are sutible for CakePHP salts and ciphers.
      */
-    public function random_configuration_strings_for_cakephp()
+    public function randomConfigurationStringsForCakephp()
     {
         $this->View->vars = array(
             'cipher' => $this->Jibirish->random('CAKECIPHER'),
@@ -47,7 +47,7 @@ class ToolsController extends \App\Controller\AppController
     /**
      * Creates and displays a password based on user provided specs.
      */
-    public function password_generator()
+    public function passwordGenerator()
     {
         $length = 24;
         $upper = 'checked';
@@ -99,7 +99,7 @@ class ToolsController extends \App\Controller\AppController
     /**
      * An action for analyzing a given string.
      */
-    public function string_analyzer()
+    public function stringAnalyzer()
     {
         $userInput = filter_input_array(INPUT_POST);
         if (!empty($userInput)) {
@@ -113,7 +113,7 @@ class ToolsController extends \App\Controller\AppController
     /**
      * A utilitity for showing meta data about a specific visitor.
      */
-    public function who_am_i()
+    public function whoAm_I()
     {
         //$this->request->title = 'Who Am I?';
     }
@@ -121,7 +121,7 @@ class ToolsController extends \App\Controller\AppController
     /**
      * Display information about a target location.
      */
-    public function domain_and_ip_analysis()
+    public function domainAndIpAnalysis()
     {
         $data = array();
 
