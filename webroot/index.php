@@ -8,7 +8,8 @@
 
 namespace Tinker;
 
-include '../config/redirect.php';
+#### Routing - NOT a tinker MVC feature
+require '../config/redirect.php';
 
 ////Initialize startup variables/////
 
@@ -36,5 +37,8 @@ $BuildTime = new Utility\BuildTime(microtime());
 
 //Bootstrap the application
 require APP . DS . 'config' . DS . 'bootstrap.php';
+
+#### Config - NOT a tinker MVC feature
+require '../../private/config.php';
 
 new Mvc\Dispatcher($Loader, $Router, $Theme, $View);

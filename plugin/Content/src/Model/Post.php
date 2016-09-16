@@ -23,8 +23,8 @@ class Post
      * Initialize the object
      * @param object $args
      */
-    public function __construct(){
-
+    public function __construct($config){
+        $this->config = $config;
         $this->connect();
     }
 
@@ -35,10 +35,10 @@ class Post
 
         $this->Pdo = new \PDO(
             "mysql:host=localhost;"
-                . "dbname=jasonsnider;"
+                . "dbname={$this->config['dbname']};"
                 . "charset=utf8",
-            'root',
-            'password'
+            $this->config['dbuser'],
+            $this->config['dbpassword']
         );
 
         $this->Pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
