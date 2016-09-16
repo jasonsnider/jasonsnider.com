@@ -6,6 +6,7 @@ extract($this->vars);
 
 echo '<article>'
 ."<h1>{$post['title']}</h1>"
+."<div class=\"text-muted\"><small><em>Posted on: {$post['created']} By: Jason Snider</em></small></div>"
 ."<section>{$post['body']}</section>"
 .'</article>';
 
