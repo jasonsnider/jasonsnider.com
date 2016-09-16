@@ -113,7 +113,7 @@ class ToolsController extends \App\Controller\AppController
     /**
      * A utilitity for showing meta data about a specific visitor.
      */
-    public function whoAm_I()
+    public function whoAmI()
     {
         //$this->request->title = 'Who Am I?';
     }
