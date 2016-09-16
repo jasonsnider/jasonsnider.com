@@ -1,28 +1,13 @@
 <?php
 /**
- * Provides functionality for improving system security.
- *
- * Jason Snider's Website (http://jasonsnider.com)
- * Copyright 2013, Jason D Snider. (http://jasonsnider.com)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright Copyright 2012, Jason D Snider. (http://jasonsnider.com)
- *
- * @link http://jasonsnider.com
- *
- * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
- * @author Jason D Snider <jason@jasonsnider.com>
- *
- * @package JSC
+ * Security.php.
  */
 namespace Jsc;
 
 /**
- * @author Jason D Snider <jason@jasonsnider.com>
+ * Security.
  *
- * @package JSC
+ * Provides functionality for improving system security.
  */
 class Security
 {

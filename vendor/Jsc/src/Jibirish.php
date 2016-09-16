@@ -5,6 +5,8 @@
 namespace Jsc;
 
 /**
+ * Jibirish.
+ * 
  * A library for creating jiberish, as in psuedo-random strings, salt, hashes
  * and noise.
  */
